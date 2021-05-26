@@ -1,0 +1,80 @@
+
+body{
+    background-color: rgb(255,251,251);
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
+}
+.logo{
+    margin-left: 60px;
+    width: 80%;
+    height: auto;
+    margin-top: 40px;
+}
+
+/** creating two columns for the webpage **/
+
+
+*{
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+}
+
+.column{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/** styling the image **/
+
+h1,h2,p,button{
+    text-align: justify;
+    
+}
+h1,h2,p,form{
+    padding-left: 200px;
+}
+h2{
+    text-transform: uppercase;
+    padding-top: 50px;
+    font-size: 60px;
+}
+p{
+    font-weight: 600px;
+    color: rgb(220,164,177);
+}
+img{
+    padding-bottom: 0;
+    margin-right: 0%;
+    height: auto;
+ }
+
+
+form{
+    
+}
+
+/**footer**/
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      
+    }
+  }
